@@ -1,0 +1,24 @@
+.diamond1{
+    width: 88px;
+    height: 88px;
+    text-align: center;
+    border: 1px solid black;
+    transform: rotate(-45deg);
+}
+
+.rectangle1{
+    width: 120px;
+    height: 88px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.circle1{
+    width: 120px;
+    height: 120px;
+    -moz-border-radius: 120px;
+    -webkit-border-radius: 120px;
+    border-radius: 120px;
+    text-align: center;
+    border: 1px solid black;
+}
