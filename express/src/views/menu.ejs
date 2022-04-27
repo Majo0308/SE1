@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+    @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+    body{
+	margin: 0;
+	padding: 0;
+    width: 100%;
+    background-color: #F8F8F8;
+    z-index: 0;
+    }
+    .TopW{
+        width: 100%;
+        height: 292px;
+        background-image: url(https://mypcwalls.com/wp-content/uploads/2021/08/Abstract-Wallpaper.jpg);
+        background-size: cover;
+        
+    }
+    .Welc{
+        position: absolute;
+        top: calc(20% + 10px);
+	    left: calc(100px);
+        color: #fff;
+	    font-family: 'Exo', sans-serif;
+	    font-size: 50px;
+	    font-weight: 250;
+        z-index: 5;
+    }
+    html, body {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            font-family: 'Exo', sans-serif;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 50px;
+            text-decoration: none;
+        }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #A733FF;
+        }
+        .subt{
+            width: 100%;
+            height: 60px;
+            border-bottom: 1px solid #E2E2E2;
+            background-color: white;
+        }
+        .subt1{
+            padding-left: 30px;
+            padding-top: 18px;
+            color: #8A7D95;
+            font-family: 'Exo', sans-serif;
+            font-size: 20px;
+            font-weight: 250;
+            z-index: 5;
+        }
+        .lista{
+            box-sizing: border-box;
+            background-color:#F8F8F8;
+            padding-top: 50px;
+            padding-left: 70px;
+            padding-right: 40px;
+            padding-bottom: 50px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px 40px;
+        }
+        .diagram{
+            height: 250px;
+            width: 420px;
+            background-color: white;
+            border-radius: 20px
+        }
+        .name{
+            height: 170px;
+            width: 420px;
+            box-sizing: border-box;
+            text-align: center;
+            padding-top: 65px;
+            color: #8A7D95;
+            font-family: 'Exo', sans-serif;
+            font-size: 33px;
+            font-weight: 250;
+            
+        }
+        .design{
+            height: 80px;
+            width: 420px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background-image: url(https://mypcwalls.com/wp-content/uploads/2021/08/Abstract-Wallpaper.jpg);
+            background-size: cover;
+        }
+
+</style>
+<body>
+    <NavBar>
+        <ul>
+            <li><a href="default.asp">FlowMap</a></li>
+            <li><a href="contact.asp">Options</a></li>
+            <li style="float: right"><a class="active" href="about.asp">Sign Up</a></li>
+          </ul>
+    </NavBar>
+    <div class="TopW">
+        <div class="Welc">Welcome Name_User</div>
+        
+    </div>
+    <div class="subt">
+        <div class="subt1">List of Diagrams</div>
+    </div>
+    <div class="lista">
+        <div class="diagram">
+            <div class="name"><a>+ Diagram</a></div>
+            <div class="design"></div>
+        </div>
+        <% Data.forEach(function(Dat1) { %>
+            <%if(Dat1.user=="Carl1"){%>
+               
+                    <div class="diagram">
+                        <div class="name"><a>Diagram 1</a></div>
+                        <div class="design"></div>
+                    </div>
+                
+               
+            <% } %>
+        <% }); %>
+        
+    
+    </div>
+</body>
+</html>

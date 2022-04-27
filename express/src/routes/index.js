@@ -14,6 +14,11 @@ router.get('/signup', (req, res) => {
 router.get('/pagina', (req, res) => {
   res.render('pagina');
 });
+router.get('/menu', (req, res) => {
+  res.render('menu',
+  {Data,
+  user1 : req.body.user1,});
+});
 router.get('/', (req, res) => {
   res.render('index', 
   { Data, 

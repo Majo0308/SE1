@@ -1,1 +1,5 @@
-[{"id":"125b7b78-e9ad-4ef8-a263-3793c6d2a7cd","name":"Carlos","email":"carlos@gmail.com","user":"Carl1","password":"1234"}]
+[{"id":"125b7b78-e9ad-4ef8-a263-3793c6d2a7cd","name":"Carlos","email":"carlos@gmail.com","user":"Carl1","password":"1234", "diagram":[
+    {"id_d":1},
+    {"id_d":2}
+]}
+,{"id":"25625a95-7027-448d-8f77-2175889e9849","name":"Maria","email":"mjso0308@gmail.com","user":"Mjso0308","password":"12345"},{"id":"755a64ea-0f96-4567-ab29-d2be0e589a7b","name":"Pedro","email":"pedro12@gmail.com","user":"Pedro123","password":"321"}]
