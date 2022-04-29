@@ -14,7 +14,7 @@ body{
 	margin: 0;
 	padding: 0;
 	/*<!--background-image: url(https://images.hdqwalls.com/wallpapers/abstract-fractal-desktop-b1.jpg);-->*/
-    background-image: url(https://mypcwalls.com/wp-content/uploads/2021/08/Abstract-Wallpaper.jpg);
+    background-image: url(https://s3.envato.com/files/aaf1ba3e-a327-419a-b5af-9f6afdd60132/inline_image_preview.jpg);
 	background-size: cover;
 
 	/*color: #fff;
@@ -195,13 +195,50 @@ body{
         .active {
             background-color: #A733FF;
         }
+	
+		.MB{
+			position: absolute;
+			top: calc(0%);
+			left: calc(0%);
+			height: 150px;
+			width: 280px;
+			background-image: url(https://s3.envato.com/files/aaf1ba3e-a327-419a-b5af-9f6afdd60132/inline_image_preview.jpg);
+			padding: 10px;
+			z-index: 2;
+			text-align: center;
+			opacity: 1;
+			
+			
+		}
+		.c{
+			padding: 30px;
+			font-family: 'Exo', sans-serif;
+            list-style-type: none;
+            color: #fff;
+			font-size: 30px;
+			lighting-color: #C306FF;
+		}
+		.d{
+			font-family: 'Exo', sans-serif;
+            list-style-type: none;
+            color: #fff;
+			font-size: 18px;
+			lighting-color: #C306FF;
+		}
+		.mess{
+			padding: 40px;
+			font-family: 'Exo', sans-serif;
+            list-style-type: none;
+            color: #fff;
+			
+			lighting-color: #C306FF;
+        }
     </style>
 </head>
 <body>
     <NavBar>
         <ul>
             <li><a href="http://localhost:3001/">FlowMap</a></li>
-            <li><a href="contact.asp">Options</a></li>
             <li style="float: right"><a class="active" href="/signup" >Sign Up</a></li>
           </ul>
     </NavBar>
@@ -218,12 +255,20 @@ body{
 				<input type="submit" value="Login" class="btn btn-primary">
 
 		</form>	
+		<% Data.forEach(function(Dat1) { %>
+            <%if(Dat1.user==user1 && Dat1.password==password1){%>
+                <div class="MB">
+					<div class="c">Correct Data</div>
+					<div class="d">
+						<a href ="/menu" style="color:#A733FF" class="Mess">Continue</a>
+					</div>
+				</div>
+                    
+                
+               
+            <% } %>
+        <% }); %>
 				
-				<% Data.forEach(function(Dat1) { %>
-					<%if(Dat1.user==user1 && Dat1.password==password1){%>
-						<a href="/menu">yeiiii</a>
-					<% } %>
-				<% }); %>
 		</div>
 </body>
 </html>

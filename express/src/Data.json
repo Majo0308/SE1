@@ -1,5 +1,1 @@
-[{"id":"125b7b78-e9ad-4ef8-a263-3793c6d2a7cd","name":"Carlos","email":"carlos@gmail.com","user":"Carl1","password":"1234", "diagram":[
-    {"id_d":1},
-    {"id_d":2}
-]}
-,{"id":"25625a95-7027-448d-8f77-2175889e9849","name":"Maria","email":"mjso0308@gmail.com","user":"Mjso0308","password":"12345"},{"id":"755a64ea-0f96-4567-ab29-d2be0e589a7b","name":"Pedro","email":"pedro12@gmail.com","user":"Pedro123","password":"321"}]
+[{"id":"125b7b78-e9ad-4ef8-a263-3793c6d2a7cd","name":"Carlos","email":"carlos@gmail.com","user":"Carl1","password":"1234","diagram":[{"id_d":1},{"id_d":2}]},{"id":"25625a95-7027-448d-8f77-2175889e9849","name":"Maria","email":"mjso0308@gmail.com","user":"Mjso0308","password":"12345"},{"id":"755a64ea-0f96-4567-ab29-d2be0e589a7b","name":"Pedro","email":"pedro12@gmail.com","user":"Pedro123","password":"321"},{"id":"ca6e032c-332f-4035-9054-33e15a265d2f","name":"Lucas","email":"lucas123@gmail.com","user":"lucas777","password":"7777"},{"id":"4e965511-2f99-4e43-9988-262059f8e991","name":"Marta","email":"mar@gmail.com","user":"mr1234","password":"mr1234"},{"id":"3af1e6ec-8e5d-45e0-8aa7-c6d231c45a0b","name":"Mateo","email":"mat5@gmai.com","user":"mat03","password":"mat03"}]

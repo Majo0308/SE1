@@ -17,23 +17,41 @@ router.get('/pagina', (req, res) => {
 router.get('/menu', (req, res) => {
   res.render('menu',
   {Data,
-  user1 : req.body.user1,});
+  user1 : req.body.user1,
+  password1: req.body.password1});  
 });
+
+
 router.get('/', (req, res) => {
   res.render('index', 
-  { Data, 
-    user1 : req.body.user1,
-    password1: req.body.password1
+  { Data,
+      user1 : req.body.user1,
+      password1: req.body.password1
   });
 });
 
+router.post('/menu', (req, res) => {
+  res.render('menu',
+  {Data});
+  
+});
+
 router.post('/',(req, res) => {
-  console.log(req.body.user1);
-  res.render('index', 
-  { Data, 
-    user1 : req.body.user1, 
+  const { user1, password1 } = req.body;
+  Data.forEach(function(Dat1) {
+  if(Dat1.user==user1 && Dat1.password==password1){
+  res.render('menu', 
+  { Data,
+    user1 : req.body.user1,
     password1: req.body.password1
-  });
+  });}
+  else{
+    res.render('index', {Data, user1 : req.body.user1,
+      password1: req.body.password1});
+  }
+});
+
+  
 });
 
 router.post('/signup', (req, res) => {
